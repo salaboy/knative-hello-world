@@ -1,0 +1,9 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: knative-hello-world
+spec:
+  template:
+    spec:
+      containers:
+        - image: salaboy/knative-hello-world
